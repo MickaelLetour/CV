@@ -1,0 +1,88 @@
+body, html {
+    height: 100%;
+    font-family: Roboto , sans-serif;
+    scroll-behavior: smooth;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+}
+
+.header{
+    background-color: #677273;
+    padding: 100px;
+}
+
+.navbar{
+    background-color: #555d5e;
+}
+
+.head-name, .head-function{
+    font-size: 0.75em;
+}
+
+.head-name{
+    font-weight: 700;
+}
+
+.head-function{
+    font-weight: 400;
+}
+
+
+/*------------------ section ------------------*/
+
+#About, #Skills, #Book, #Experiences, #Diplomas, #Contact{
+    min-height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .titleSection {
+        background-color: white;
+        height: 15vh;
+    }
+    .contentSection{
+        height: 85vh;
+    }
+}
+
+#About{
+    background-image: url("../img/about.jpg");
+}
+#Skills{
+    background-image: url("../img/skills.jpg");
+}
+#Book{
+    background-image: url("../img/book.jpg");
+}
+#Experiences{
+    background-image: url("../img/experiences.jpg");
+}
+#Diplomas{
+    background-image: url("../img/diplomas.jpg");
+}
+
+
+/*------------------ -------------- ------------------*/
+
+.skill, .experience, .train, .aboutText{
+    background-color: rgb(220, 220, 220, 0.7);
+}
+
+.book{
+    background: none;
+    color: white;
+    img:hover{
+        border: solid 1px gold;
+    }
+}
+
+.contact{
+    background-color: #677273;
+}
+
+footer{
+    background-color: #555d5e;
+}
