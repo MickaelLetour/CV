@@ -12,6 +12,7 @@ class SkillController extends AppController{
     public function getSkills(){
         $skills[] = App::getInstance()->getTable('SkillTable')->getSkillByCategory('Back-End');
         $skills[] = App::getInstance()->getTable('SkillTable')->getSkillByCategory('Front-End');
+        $skills[] = App::getInstance()->getTable('SkillTable')->getSkillByCategory('Soft-Skill');
         return $skills;
     }
 

@@ -1,3 +1,6 @@
+$primary : #007aff;
+$background : #35393c;
+
 body, html {
     height: 100%;
     font-family: Roboto , sans-serif;
@@ -11,12 +14,10 @@ body, html {
 }
 
 .header{
-    background-color: #677273;
     padding: 100px;
 }
-
-.navbar{
-    background-color: #555d5e;
+.header, .navbar, .aboutText, .train, .experience, .skill, .form, footer{
+    background-color: $background !important;
 }
 
 .head-name, .head-function{
@@ -31,7 +32,14 @@ body, html {
     font-weight: 400;
 }
 
-
+.nav-link, .book {
+    img:hover{
+        border: solid 1px $primary;
+    }
+}
+.book{
+    background: none;
+}
 /*------------------ section ------------------*/
 
 #About, #Skills, #Book, #Experiences, #Diplomas, #Contact{
@@ -42,8 +50,8 @@ body, html {
     background-attachment: fixed;
 
     .titleSection {
-        background-color: white;
         min-height: 15vh;
+        background-color: $background;
     }
     .contentSection{
         min-height: 85vh;
@@ -65,26 +73,8 @@ body, html {
 #Diplomas{
     background-image: url("../img/diplomas.jpg");
 }
-
+#Contact{
+    background-image: url("../img/contact.jpg");
+}
 
 /*------------------ -------------- ------------------*/
-
-.skill, .experience, .train {
-    background-color: rgb(220, 220, 220, 0.7);
-}
-
-.book{
-    background: none;
-    color: white;
-    img:hover{
-        border: solid 1px gold;
-    }
-}
-
-.contact,.aboutText{
-    background-color: #677273;
-}
-
-footer{
-    background-color: #555d5e;
-}

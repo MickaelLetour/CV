@@ -3,7 +3,7 @@ use App\HTML\BootstrapForm;
 $form = new BootstrapForm($_POST); //instancie la class boostrap form
 ?>
 
-<div class="col-10 col-sm-8 col-md-5 col-lg-4 m-3">
+<div class="form col-10 col-sm-8 col-md-5 col-lg-4 m-3 p-5 text-light">
 <?php
     if (isset($_SESSION['emailError'])){ 
         $emailError = $_SESSION['emailError'];?>

@@ -7,9 +7,10 @@ $skills = $SkillController->getSkills();// appelle la fonction qui renvoie les s
 ?>
 
 <?php foreach($categories as $category){ ?>
-    <div class="skill jumbotron col-10 col-sm-8 col-md-5 col-lg-4 m-3 text-center align-items-center">
+    
+    <div class="skill jumbotron col-10 col-sm-8 col-md-5 col-lg-3 m-3 text-center align-items-center">
     <h3> <?= $category->name?></h3>
-    <img src="<?php ROOT ?>/Public/img/<?= $category->name ?>.jpg" class="img-fluid max-width: 100% height: auto">
+    <img src="<?php ROOT ?>/Public/img/<?= $category->name ?>.jpg" class="img-fluid" width="50px" height="auto">
     <?php foreach($skills as $skill){ ?>
         <?php foreach($skill as $s){ ?>
             <?php if($s->category === $category->name){?>
