@@ -74,27 +74,36 @@
                 <h2 class="text-uppercase font-weight-bold py-5">a propos</h2>
             </div>
             <div class="contentSection col-12 row text-center align-items-center justify-content-center">
-                <div class="col-12 col-sm-10 col-md-8 col-lg-4">
-                    <p class="aboutText m-0">Mon objectif est de pouvoir développer toutes sortes de sites Web. Je voudrais me spécialiser dans le backend et la programmation. Je vise également à développer des algorithmes et des programmes complexes.</p>
+                <div class="aboutText my-5 py-5 col-12 col-sm-10 col-md-8 col-lg-6">
+                    <h4 class="text-primary">Moi en quelques mots</h4>
+                    <p>Cumulant nombreuses expériences professionnelles avant d'aboutir à un poste de manager en restauration, j'ai choisi de me réorienter dans le développement web.</p>
+                    <p>Après avoir démissionné de ce poste, j'ai entamé ma reconversion par un bilan de compétences, qui m'as dirigé sur le milieu du numérique.</p>
+                    <p>J'ai toujours été passionné et captivé par ce milieu, notamment par le web, les jeux vidéo, les nouvelles technologies plus globalement.</p>
+                    <p>Après avoir approfondie mes recherches, la réponse a fini par être évidente. J’étais fait pour le développement web.</p>
+                    <p>Je m'y suis investi donc complètement en commençant par une formation au titre de développeur web et web mobile de niveau 5, à l'école Aformac (labelisé grande école du numérique), que j'ai obtenu au mois de mars 2020. Aujourd'hui, autodidacte, je continue à me former en vue de me spécialiser en développeur web back end.</p>
+                    <p>Je suis à la recherche d'un premier emploi en tant que développeur web Junior</p>
+                    <p>Je suis évidemment par encore un expert, mais j'aime apprendre, je suis très motivé à intégrer une entreprise et de mettre en pratique mon savoir-faire. Disponible, je peux vous rencontrer afin de vous prouver mes motivations et vous expliquer mon parcours.</p>
                 </div>
-                <div class="col-12 text-center d-flex align-items-center justify-content-center">
+                <div class="col-12 text-center d-flex align-items-center justify-content-center mb-5">
                     <a href="./Public/img/CVMickaelLetour.PDF" download><button class="btn btn-primary btn-sm">Téléchargez mon CV</button></a>
                 </div>
             </div>
         </section>
 
         <section id="Skills" class="row justify-content-center text-center m-0">
-            <div class="col-12 text-center p-0">
-                <h2 class="titleSection text-uppercase font-weight-bold py-5">Compétences</h2>
+            <div class="titleSection col-12 text-center py-5">
+                <h2 class="text-uppercase font-weight-bold">Compétences</h2>
+                <h4 class="text-primary">Autodidacte, je me forme constamment</h4>
             </div>
             <div class="contentSection col-12 row text-center align-items-center justify-content-center">
-                <?php require (ROOT. '/App/Views/Main/skills.php')?>
+                <?php require ROOT.'/App/Views/Main/skills.php'?>
             </div>
         </section>
 
         <section id="Book" class="row justify-content-center text-center m-0">
-            <div class="col-12 text-center p-0">
-                <h2 class="titleSection text-uppercase font-weight-bold py-5">Portfolio</h2>
+            <div class="titleSection col-12 text-center py-5">
+                <h2 class="text-uppercase font-weight-bold">Portfolio</h2>
+                <h4 class="text-primary">Mes premières réalisations</h4>
             </div>
             <div class="contentSection col-12 row text-center align-items-center justify-content-center">
                 <?php require (ROOT. '/App/Views/Main/books.php')?>
@@ -102,8 +111,9 @@
         </section>
 
         <section id="Experiences" class="row justify-content-center text-center m-0">
-            <div class="titleSection col-12 text-center p-0">
-                <h2 class="text-uppercase font-weight-bold py-5">Experiences</h2>
+            <div class="titleSection col-12 text-center py-5">
+                <h2 class="text-uppercase font-weight-bold">Experiences</h2>
+                <h4 class="text-primary">Les plus significatives</h4>
             </div>
             <div class="contentSection col-12 row text-center align-items-center justify-content-center">
                 <?php require (ROOT. '/App/Views/Main/experiences.php') ?>
@@ -111,8 +121,9 @@
         </section>
 
         <section id="Diplomas" class="row justify-content-center text-center m-0">
-            <div class="titleSection  col-12 text-center p-0">
-                <h2 class="text-uppercase font-weight-bold py-5">Formation</h2>
+            <div class="titleSection col-12 text-center py-5">
+                <h2 class="text-uppercase font-weight-bold">Formations</h2>
+                <h4 class="text-primary">Les plus</h4>
             </div>
             <div class="contentSection col-12 row text-center align-items-center justify-content-center">
                 <?php require (ROOT. '/App/Views/Main/train.php') ?>
@@ -120,8 +131,9 @@
         </section>
 
         <section id="Contact" class="contact row justify-content-center text-center m-0">
-            <div class="col-12 text-center p-0">
-                <h2 class="titleSection text-uppercase font-weight-bold py-5">Contact</h2>
+            <div class="titleSection col-12 text-center py-5">
+                <h2 class="text-uppercase font-weight-bold">Contact</h2>
+                <h4 class="text-primary">Pour me contacter</h4>
             </div>
             <div class="contentSection col-12 row text-center align-items-center justify-content-center">
                 <?php require (ROOT. '/App/Views/Main/form.php') ?></div>

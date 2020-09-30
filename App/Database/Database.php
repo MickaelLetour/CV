@@ -37,14 +37,14 @@ class Database {
      * Iniatilise l'outil PDO de MySQL
      */
     private function getPDO() {
+    
+            $pdo = new PDO("mysql:dbname=$this->db_name;host=$this->db_host", $this->db_user , $this->db_pass, array (PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''));
+    
+            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    
+            $this->pdo = $pdo;
             
-        $pdo = new PDO("mysql:dbname=$this->db_name;host=$this->db_host", $this->db_user , $this->db_pass, array (PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''));
-
-        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-        $this->pdo = $pdo;
-        
-        return $pdo;
+            return $pdo;
 
     }
 
