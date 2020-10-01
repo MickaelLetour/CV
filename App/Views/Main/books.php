@@ -6,7 +6,7 @@ $books = $BookController->getBooks();//Recupère les informations de la table  b
 
 foreach($books as $book){ ?>
     <div class="book jumbotron col-10 col-sm-8 col-md-5 col-lg-4 m-3 align-self-center">
-        <a href="<?= $book->link?>"><img class="img-fluid max-width: 100% height: auto" src="<?php ROOT ?>/Public/img/<?= $book->name_img ?>.jpg"></a>
+        <a href="<?= $book->link?>"><img class="img-fluid max-width: 100% height: auto" src="<?php ROOT ?>/Public/img/<?= $book->name_img ?>.jpg" alt="<?= $book->name_img ?>"></a>
     </div>
 <?php } ?>
 
