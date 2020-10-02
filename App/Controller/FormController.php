@@ -1,5 +1,4 @@
 <?php 
-var_dump($_POST);
 
 if (isset($_POST['email'])){
     session_start();
@@ -7,11 +6,12 @@ if (isset($_POST['email'])){
         $send = ("Erreur dans l'Email");
         $_SESSION['emailError'] = $send;
     } else {
-    $from = $_POST['email'];
         if ((isset($_POST['subject'])) && (isset($_POST['content']))){
+            $headers = 'From: '. $_POST['email'] . "\r\n" . $_POST['username'];
+            $to = 'mickael.letour@hotmail.fr';
             $subject = $_POST['subject'];
             $message = $_POST['content'];
-            mail('mickael.letour@hotmail.fr', $subject, $message, 'De: ' . $_POST['username']. ' ' . $from);
+            mail($to, $subject, $message, $headers);
             $send = ("Email Envoyé");
             $_SESSION['emailSend'] = $send;
         }
