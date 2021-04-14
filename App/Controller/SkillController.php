@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace App\Controller;
 
@@ -13,6 +13,7 @@ class SkillController extends AppController{
         $skills[] = App::getInstance()->getTable('SkillTable')->getSkillByCategory('Back-End');
         $skills[] = App::getInstance()->getTable('SkillTable')->getSkillByCategory('Front-End');
         $skills[] = App::getInstance()->getTable('SkillTable')->getSkillByCategory('Soft-Skill');
+        $skills[] = App::getInstance()->getTable('SkillTable')->getSkillByCategory('Certification');
         return $skills;
     }
 

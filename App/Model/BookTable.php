@@ -12,10 +12,19 @@ class BookTable extends Table{
      * Recupere toutes les réaliations de la base de données
      * @return array
      */
-    public function getBooks(){
-        return $this->query("
+    public function getBooks(): array
+    {
+        $books = $this->query("
             SELECT * FROM books
         ");
+
+        $bookWithImg = [];
+        foreach ($books as $book){
+            $bookWithImg[] = $this->query("
+            SELECT * FROM books INNER JOIN image ON books.id = image.book WHERE books.id = $book->id;
+            ");
+        }
+        return $bookWithImg;
     }
 
 }

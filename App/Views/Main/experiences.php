@@ -6,11 +6,22 @@ $experiences = $ExperienceController->getExperiences();//Recupère les informati
 ?>
 
 <?php foreach($experiences as $experience){ ?>
-    <div class="experience jumbotron col-10 col-sm-8 col-md-5 col-lg-4 m-3">
+    <div class="experience jumbotron col-10 col-sm-8 col-md-5 col-lg-4 m-3 p-3">
         <h3> <?= $experience->title?> </h3>
-        <p>Du <?=$experience->date_start?> au <?=$experience->date_end?></p>
+        <p>
+            Du <?=$experience->date_start?>
+            <?php if($experience->date_end != null){
+                echo "au $experience->date_end";
+            }else {
+                echo "à aujourd'hui";
+            }?>
+        </p>
         <p>Entreprise : <?=$experience->name_business?> </p>
-        <p>Ville : <?=$experience->city?> </p>
-        <p> <?= $experience->content?></p>
+        <p>
+            <?php if($experience->city != null){
+                echo "Ville : $experience->city";
+            }?>
+        </p>
+        <p><?= $experience->content?></p>
     </div>
 <?php } ?>

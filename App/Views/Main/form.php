@@ -23,10 +23,10 @@ $form = new BootstrapForm($_POST); //instancie la class boostrap form
 ?>
 
 <form method="post" action="<?php ROOT ?>/App/Controller/FormController.php" autocomplete="on">
-    <?= $form->input('username', 'Nom'); ?>
-    <?= $form->input('subject', 'Objet'); ?>
-    <?= $form->email('email', 'Email'); ?>
-    <?= $form->textarea('content', 'Message'); ?>
-    <?= $form->submit(); ?>
+    <p><?= $form->input('username', 'Nom'); ?></p>
+    <p><?= $form->input('subject', 'Objet'); ?></p>
+    <p><?= $form->email('email', 'Email'); ?></p>
+    <p><?= $form->textarea('content', 'Message'); ?></p>
+    <p><?= $form->submit(); ?></p>
 </form>
 </div>
