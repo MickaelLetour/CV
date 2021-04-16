@@ -15,7 +15,7 @@
       <meta property="og:image:alt" content="Logo de LetourWebDev" />
       <meta property="og:image:width" content="" />
       <meta property="og:image:height" content="" />
-    <link rel="canonical" href="https://www.cvmickaelletour.com">
+    <link rel="canonical" href="https://www.letourwebdev.com">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" type="text/css" href="<?php ROOT ?>Public/css/style.css">
@@ -62,15 +62,6 @@
                 <li class="nav-item">
                     <a class="nav-link text-center text-uppercase" href="#Contact">Contact</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-center" href="https://www.linkedin.com/in/letourmickael/"><img src="<?php ROOT ?>Public/img/linkedinIcon.jpg" class="img-fluid" alt="logo LinkedIn" width="30" ></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-center" href="https://github.com/MickaelLetour"><img src="<?php ROOT ?>Public/img/githubIcon.jpg" class="img-fluid" alt="logo Git" width="30"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-center" href="https://www.facebook.com/mickael.tyler"><img src="<?php ROOT ?>Public/img/fbIcon.jpg" class="img-fluid" alt="logo Facebook" width="30"></a>
-                </li>
             </ul>
         </div>
     </nav>
@@ -81,6 +72,11 @@
             <div class="contentSection col-12 row text-center align-items-center justify-content-center">
                 <div class="aboutText my-5 py-5 col-12 col-sm-10 col-md-8 col-lg-6 text-light">
                     <h2 class="text-uppercase text-light font-weight-bold">à propos</h2>
+                    <div class="my-3">
+                        <span class="px-3"><a class="text-center" href="https://www.linkedin.com/in/letourmickael/"><img src="<?php ROOT ?>Public/img/linkedinIcon.jpg" class="img-fluid" alt="logo LinkedIn" width="30" ></a></span>
+                        <span class="px-3"><a class="text-center" href="https://github.com/MickaelLetour"><img src="<?php ROOT ?>Public/img/githubIcon.jpg" class="img-fluid" alt="logo Git" width="30"></a></span>
+                        <span class="px-3"><a class="text-center" href="https://www.facebook.com/mickael.tyler"><img src="<?php ROOT ?>Public/img/fbIcon.jpg" class="img-fluid" alt="logo Facebook" width="30"></a></span>
+                    </div>
                     <p class="text-primary mb-5">Moi en quelques mots</p>
                     <p>Cumulant nombreuses expériences professionnelles avant d'aboutir à un poste de manager en restauration, j'ai choisi de me réorienter dans le développement web.</p>
                     <p>Après avoir démissionné de ce poste, j'ai entamé ma reconversion par un bilan de compétences, qui m'as dirigé sur le milieu du numérique.</p>
@@ -88,7 +84,7 @@
                     <p>Je m'y suis investi donc complètement en commençant par une formation au titre de développeur web et web mobile de niveau 5, à l'école Aformac (labelisé grande école du numérique), que j'ai obtenu au mois de mars 2020. Aujourd'hui, autodidacte, je continue à me former en vue de me spécialiser en back end. J'ai notamment passer 3 certifications, Symfony 5, Bootstrap 5 et Git & GitHub.</p>
                     <p>Finalement, je me suis lancé en freelance, et réalisés 2 missions différentes, pour 2 site vitrines.</p>
                     <p>Je ne suis pas encore un expert, mais j'aime apprendre, je suis très motivé à intégrer une entreprise et de mettre en pratique mon savoir-faire. Disponible, je peux vous rencontrer afin de vous prouver mes motivations et vous expliquer mon parcours.</p>
-                    <a href="./Public/img/CVMickaelLetour.PDF" download><button class="btn btn-primary btn-lg mt-5">Téléchargez mon CV</button></a>
+                    <a href="./Public/img/CVMickaelLetour.pdf" download><button class="btn btn-primary btn-lg mt-5">Téléchargez mon CV</button></a>
                 </div>
             </div>
         </section>
@@ -107,6 +103,7 @@
             <div class="titleSection col-12 text-center py-5">
                 <h2 class="text-uppercase font-weight-bold text-light">Portfolio</h2>
                 <p class="text-primary">Mes premières réalisations</p>
+                <p class="text-white">Tout le code est disponible sur mon profil <a href="https://github.com/"> GitHub<a href="https://github.com/"></a></p>
             </div>
             <div class="contentSection col-12 row text-center align-items-center justify-content-center">
                 <?php require (ROOT. '/App/Views/Main/books.php')?>

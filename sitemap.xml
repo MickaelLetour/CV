@@ -8,8 +8,14 @@
 
 
 <url>
-  <loc>https://www.cvmickaelletour.com/</loc>
-  <lastmod>2020-07-20T15:17:30+00:00</lastmod>
+  <loc>https://www.letourwebdev.com/</loc>
+  <lastmod>2021-04-15T09:02:07+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.letourwebdev.com/Public/img/CVMickaelLetour.PDF</loc>
+  <lastmod>2021-04-09T15:28:57+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 
 
